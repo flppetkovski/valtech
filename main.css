@@ -660,7 +660,7 @@ a:active {
 
   .nav__mobile {
     position: relative;
-    height: 85vh;
+    height: 90vh;
     width: 100vw;
     color: var(--tertial-black);
     flex-direction: column;
