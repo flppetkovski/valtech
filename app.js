@@ -38,20 +38,20 @@ linkOne.addEventListener('click', function (e) {
   linkThree.classList.remove('active')
 })
 linkTwo.addEventListener('click', function (e) {
+  e.preventDefault()
   primaryButton.classList.remove('hidden')
   main.classList.remove('hidden')
   footer.classList.remove('hidden')
-  e.preventDefault()
   smoothScroll(sectionTwo)
   linkOne.classList.remove('active')
   linkThree.classList.remove('active')
   linkTwo.classList.add('active')
 })
 linkThree.addEventListener('click', function (e) {
+  e.preventDefault()
   primaryButton.classList.remove('hidden')
   main.classList.remove('hidden')
   footer.classList.remove('hidden')
-  e.preventDefault()
   smoothScroll(sectionThree)
   linkOne.classList.remove('active')
   linkTwo.classList.remove('active')
@@ -61,6 +61,9 @@ logo.addEventListener('click', smoothScroll(document.getElementById('nav')))
 
 mobileOne.addEventListener('click', function (e) {
   e.preventDefault()
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   nav__list.classList.add('hidden')
   mobile__list.classList.add('hidden')
   smoothScroll(sectionOne)
@@ -71,6 +74,9 @@ mobileOne.addEventListener('click', function (e) {
 
 mobileTwo.addEventListener('click', function (e) {
   e.preventDefault()
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   nav__list.classList.add('hidden')
   mobile__list.classList.add('hidden')
   smoothScroll(sectionTwo)
@@ -81,6 +87,9 @@ mobileTwo.addEventListener('click', function (e) {
 
 mobileThree.addEventListener('click', function (e) {
   e.preventDefault()
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   nav__list.classList.add('hidden')
   mobile__list.classList.add('hidden')
   smoothScroll(sectionThree)
@@ -148,13 +157,10 @@ mobileMenu.addEventListener('click', function () {
   bar1.classList.toggle('change-1')
   bar2.classList.toggle('change-2')
   bar3.classList.toggle('change-3')
-  primaryButton.classList.add('hidden')
-  main.classList.add('hidden')
-  footer.classList.add('hidden')
 })
 mobileMenu.addEventListener('click', function () {
   nav__list.classList.toggle('hidden')
-  mobile__list.classList.remove('hidden')
+  mobile__list.classList.toggle('hidden')
   primaryButton.classList.toggle('hidden')
   main.classList.toggle('hidden')
   footer.classList.toggle('hidden')
