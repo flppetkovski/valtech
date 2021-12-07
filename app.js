@@ -122,7 +122,7 @@ primaryButton.addEventListener('mouseleave', function () {
   primaryButton.classList.remove('primary__button')
   setTimeout(() => {
     primaryButton.classList.remove('primary__button')
-  }, 4000)
+  }, 2500)
 })
 
 primaryButton.addEventListener('click', function () {
@@ -143,6 +143,6 @@ mobileMenu.addEventListener('click', function () {
 mobileMenu.addEventListener('click', function () {
   nav__list.classList.toggle('hidden')
   mobile__list.classList.toggle('hidden')
-  main.classList.toggle('hidden')
-  footer.classList.toggle('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
 })
