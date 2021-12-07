@@ -148,4 +148,5 @@ mobileMenu.addEventListener('click', function () {
   mobile__list.classList.toggle('hidden')
   main.classList.remove('hidden')
   footer.classList.remove('hidden')
+  primaryButton.remove('hidden')
 })
