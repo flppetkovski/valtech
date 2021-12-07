@@ -58,6 +58,9 @@ mobileOne.addEventListener('click', function (e) {
   bar1.classList.toggle('change-1')
   bar2.classList.toggle('change-2')
   bar3.classList.toggle('change-3')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
+  primaryButton.remove('hidden')
 })
 
 mobileTwo.addEventListener('click', function (e) {
@@ -68,6 +71,9 @@ mobileTwo.addEventListener('click', function (e) {
   bar1.classList.toggle('change-1')
   bar2.classList.toggle('change-2')
   bar3.classList.toggle('change-3')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
+  primaryButton.remove('hidden')
 })
 
 mobileThree.addEventListener('click', function (e) {
@@ -78,6 +84,9 @@ mobileThree.addEventListener('click', function (e) {
   bar1.classList.toggle('change-1')
   bar2.classList.toggle('change-2')
   bar3.classList.toggle('change-3')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
+  primaryButton.remove('hidden')
 })
 
 function sendMail() {
@@ -147,6 +156,3 @@ mobileMenu.addEventListener('click', function () {
   nav__list.classList.toggle('hidden')
   mobile__list.classList.toggle('hidden')
 })
-// main.classList.remove('hidden')
-// footer.classList.remove('hidden')
-// primaryButton.remove('hidden')
