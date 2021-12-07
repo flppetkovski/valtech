@@ -30,11 +30,17 @@ function smoothScroll(section) {
 
 linkOne.addEventListener('click', function (e) {
   e.preventDefault()
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   linkOne.classList.add('active')
   linkTwo.classList.remove('active')
   linkThree.classList.remove('active')
 })
 linkTwo.addEventListener('click', function (e) {
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   e.preventDefault()
   smoothScroll(sectionTwo)
   linkOne.classList.remove('active')
@@ -42,6 +48,9 @@ linkTwo.addEventListener('click', function (e) {
   linkTwo.classList.add('active')
 })
 linkThree.addEventListener('click', function (e) {
+  primaryButton.classList.remove('hidden')
+  main.classList.remove('hidden')
+  footer.classList.remove('hidden')
   e.preventDefault()
   smoothScroll(sectionThree)
   linkOne.classList.remove('active')
@@ -146,4 +155,7 @@ mobileMenu.addEventListener('click', function () {
 mobileMenu.addEventListener('click', function () {
   nav__list.classList.toggle('hidden')
   mobile__list.classList.remove('hidden')
+  primaryButton.classList.toggle('hidden')
+  main.classList.toggle('hidden')
+  footer.classList.toggle('hidden')
 })
