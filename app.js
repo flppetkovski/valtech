@@ -139,10 +139,11 @@ mobileMenu.addEventListener('click', function () {
   bar1.classList.toggle('change-1')
   bar2.classList.toggle('change-2')
   bar3.classList.toggle('change-3')
+  primaryButton.classList.add('hidden')
+  main.classList.add('hidden')
+  footer.classList.add('hidden')
 })
 mobileMenu.addEventListener('click', function () {
   nav__list.classList.toggle('hidden')
   mobile__list.classList.remove('hidden')
-  main.classList.remove('hidden')
-  footer.classList.remove('hidden')
 })
